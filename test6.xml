@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Employee>
+    <ID>10</ID>
+    <name>Karolina</name>
+    <surname>Madej</surname>
+    <age>0</age>
+    <username>username</username>
+    <password>inna</password>
+</Employee>

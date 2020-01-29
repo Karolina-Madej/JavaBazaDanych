@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="isConnected" layoutX="26.0" layoutY="14.0" text="Label" />
+      <TextField fx:id="nameTextField" layoutX="23.0" layoutY="60.0" promptText="Name" />
+      <TextField fx:id="surnameTextField" layoutX="23.0" layoutY="101.0" promptText="Surname" />
+      <Button fx:id="Insert" layoutX="25.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#insertIntoClicked" text="Insert" />
+      <TableView fx:id="dbTableView" layoutX="14.0" layoutY="321.0" prefHeight="214.0" prefWidth="450.0">
+        <columns>
+          <TableColumn fx:id="idTableView" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nameTableView" prefWidth="75.0" text="name" />
+            <TableColumn fx:id="surnameTableView" prefWidth="75.0" text="surname" />
+            <TableColumn fx:id="agetableView" prefWidth="75.0" text="age" />
+            <TableColumn fx:id="usernametableView" prefWidth="75.0" text="username" />
+            <TableColumn fx:id="passwordTableView" prefWidth="75.0" text="password" />
+        </columns>
+      </TableView>
+      <Button fx:id="show" layoutX="14.0" layoutY="559.0" mnemonicParsing="false" onMouseClicked="#saveButtonClicked" text="Save" />
+      <TextField fx:id="passwordChangeTextField" layoutX="279.0" layoutY="53.0" promptText="Password Changer" />
+      <Button layoutX="287.0" layoutY="88.0" mnemonicParsing="false" onMouseClicked="#upDateClicked" text="Update" />
+      <TextField fx:id="ageTextField" layoutX="23.0" layoutY="140.0" promptText="Age" />
+      <TextField fx:id="usernameTextField" layoutX="23.0" layoutY="180.0" promptText="Username" />
+      <TextField fx:id="passwordTextField" layoutX="25.0" layoutY="221.0" promptText="Password" />
+   </children>
+</AnchorPane>
